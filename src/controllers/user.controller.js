@@ -20,6 +20,7 @@ const generateAccessAndRefereshTokens = async(userId) =>{
 
 
     } catch (error) {
+        // console.log("ACTUAL ERROR:", error)
         throw new ApiError(500, "Something went wrong while generating referesh and access token")
     }
 }
